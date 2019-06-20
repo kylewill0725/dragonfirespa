@@ -1,5 +1,5 @@
 <template>
-    <p>{{msg}}</p>
+    <b-button>{{msg}}</b-button>
 </template>
 <script lang="ts">
 import Vue from 'vue'
