@@ -1,5 +1,5 @@
 <template>
-    <div id="list" ref="list" >
+    <div ref="list" >
         <slot />
     </div>
 </template>
@@ -11,7 +11,7 @@ export default Vue.extend({
 </script>
 <style scoped>
     @media(orientation: landscape) {
-        #list {
+        .list {
             justify-content: center;
             flex-wrap: wrap;
             overflow-x: auto;
@@ -19,12 +19,12 @@ export default Vue.extend({
     }
     
     @media(orientation: portrait) {
-        #list {
+        .list {
             overflow-y: auto;
         }
     }
 
-    #list {
+    .list {
         flex-grow: 1;
         display: flex;
         flex-direction: column;

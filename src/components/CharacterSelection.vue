@@ -1,13 +1,19 @@
 <template>
-    <div id='container'>
-        <ScrollableList id="list">
+    <div class='container'>
+        <ScrollableList class="list">
             <CharacterTile charClass="deception" />
             <CharacterTile charClass="arcane" />
             <CharacterTile charClass="devotion" />
             <CharacterTile charClass="martial" />
             <CharacterTile charClass="deception" />
+            <CharacterTile charClass="deception" />
+            <CharacterTile charClass="deception" />
+            <CharacterTile charClass="deception" />
+            <CharacterTile charClass="deception" />
+            <CharacterTile charClass="deception" />
+            <CharacterTile charClass="deception" />
         </ScrollableList>
-        <b-button id='create'>Create</b-button>
+        <b-button class='create'>Create</b-button>
     </div>
 </template>
 <script lang="ts">
@@ -26,12 +32,12 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-    #container {
+    .container {
         height: 100%;
         display: flex;
         flex-direction: column;
     }
-    #list {
+    .list {
         flex-grow: 1;
         display: flex;
     }
