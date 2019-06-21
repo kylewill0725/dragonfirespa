@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <!-- <NavBar class="nav" /> -->
+    <NavBar class="nav" />
     <!-- <div>test1</div> -->
     <!-- <div>test2</div> -->
-    <CharacterSelection class="list" charClass="deception"/>
+    <div class="list">
+      <CharacterSelection charClass="deception"/>
+    </div>
     <!-- <CharacterSheet v-if="url.includes('sheet')" charClass="deception"/> -->
   </div>
 </template>
@@ -49,12 +51,16 @@ export default Vue.extend({
 </script>
 
 <style>
-#app, body, html {
-  height: 100%;
+#app {
+  height: 100vh;
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 2rem calc(100% - 2rem);
+}
+
+.list {
+  height: 100%;
 }
 </style>
